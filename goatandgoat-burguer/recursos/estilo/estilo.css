@@ -11,8 +11,8 @@ nav{
     width: 100%;
     margin-top: -100px;
     position: fixed;
-     /*background-color: white;
-   height: 100px;*/
+    background-color: white;
+    height: 100px;
 
 }
 
@@ -146,14 +146,19 @@ nav span{
 .lanches_item{
     margin: 15px;
     border: 1px solid black;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     width: 300px;
-    height: 500px;
+    height: 580px;
     
 }
 
+.lanches_item .descricao_lanche{
+    text-align: justify;
+    margin: 10px;
+}
+
 #lanches img{
-    width: 300px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
@@ -166,7 +171,7 @@ nav span{
 }
 
 .lanches_item .valor_lanche{
-    margin: 5px;
+    margin: 10px;
     font-size: 0.9em;
     font-weight: 600;
 }
@@ -193,6 +198,7 @@ nav span{
     display: flex;
     margin-top: 100px;
     
+    
 }
 
 #menbro #menbros{
@@ -207,11 +213,12 @@ nav span{
 }
 
 #menbros img{
-     border-radius: 50%;
-     width: 80px;
-     height: 80px;
-     border: 3px solid white;
-     margin: 5px;
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner do lanche */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%;
+
+    border: 3px solid white;
+    margin: 5px;
   
     
 }

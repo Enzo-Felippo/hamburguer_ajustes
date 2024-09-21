@@ -6,30 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanches</title>
     <link rel="stylesheet" href="recursos/estilo/estilo.css">
-    <script type="text/javascript" src="recursos/js/modal.js" defer></script>
 </head>
 
 <body>
     <nav>
-            <a href="index.html"><img src="recursos/imagens/mini_logo.png" alt="log"></a>
-            <ul>
-                <li><a href="lanches.html">Lanches</a></li>
-                <li><a href="condimentos.html">Molhos Especiais</a></li>
-                <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
-    
-                <li><a href="seja_menbro.html">Seja Menbro</a></li>
-                <li onclick="listarProduto()" id=carrinho><a href="#" id="abrir_modal"><img src="recursos/imagens/carrinho.png" alt="">  </a></li>
-            </ul>
-                <div id="qta">
-                    <span id="mostra_valor" >00</span> 
-                </div>
+        <a href="index.html"><img src="recursos/imagens/mini_logo.png" alt="log"></a>
+        <ul>
+            <li><a href="lanches.html">Lanches</a></li>
+            <li><a href="condimentos.html">Molhos Especiais</a></li>
+            <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
+            <li><a href="bebidas_especiais.html">Bebidas Especiais</a></li>
+            <li><a href="seja_menbro.html">Seja Membro</a></li>
+            <li onclick="listarProduto()" id="carrinho"><a href="#" id="abrir_modal"><img src="recursos/imagens/carrinho.png" alt=""></a></li>
+        </ul>
+        <div id="qta">
+            <span id="mostra_valor">00</span> 
+        </div>
     </nav>
-    
+
     <section id="lanches">
         <div class="lanches_item">
             <img src="recursos/imagens/lanches/HAMBUGER_1.jpg" alt="">
             <p class="nome_lanche">Wrap Cremoso de Cabra</p>
-            <p>Um wrap macio e saboroso feito com massa integral, envolvendo carne de cabra desfiada e cozida lentamente
+            <p class="descricao_lanche">Um wrap macio e saboroso feito com massa integral, envolvendo carne de cabra desfiada e cozida lentamente
                 em um molho cremoso de iogurte e especiarias indianas. Adicione legumes frescos picados, chutney de
                 manga e hortelã para um toque refrescante e aromático.</p>
             <p class="valor_lanche">R$:75,00</p>
@@ -47,7 +46,7 @@
         <div class="lanches_item">
             <img src="recursos/imagens/lanches/HAMBUGER_3.jpg" alt="">
             <p class="nome_lanche">Mini Hambúrgueres de Cabra:</p>
-            <p>Pequenos pães de hambúrguer macios e suculentos, recheados com mini hambúrgueres de carne de cabra
+            <p class="descricao_lanche">Pequenos pães de hambúrguer macios e suculentos, recheados com mini hambúrgueres de carne de cabra
                 temperados com alho, pimenta e ervas frescas. Sirva com queijo cheddar derretido, bacon crocante, cebola
                 caramelizada e maionese caseira.</p>
             <p class="valor_lanche">R$: 35,00</p>
@@ -56,7 +55,7 @@
         <div class="lanches_item">
             <img src="recursos/imagens/lanches/HAMBUGER_4.jpg" alt="">
             <p class="nome_lanche">Wrap Cremoso de Cabra</p>
-            <p>Um wrap macio e saboroso feito com massa integral, envolvendo carne de cabra desfiada e cozida lentamente
+            <p class="descricao_lanche">Um wrap macio e saboroso feito com massa integral, envolvendo carne de cabra desfiada e cozida lentamente
                 em um molho cremoso de iogurte e especiarias indianas. Adicione legumes frescos picados, chutney de
                 manga e hortelã para um toque refrescante e aromático.</p>
             <p class="valor_lanche">R$:75,00</p>
@@ -74,7 +73,7 @@
         <div class="lanches_item">
             <img src="recursos/imagens/lanches/HAMBURGUER_VEGANO3.jpg" alt="">
             <p class="nome_lanche">Mini Hambúrgueres de Cabra:</p>
-            <p>Pequenos pães de hambúrguer macios e suculentos, recheados com mini hambúrgueres de carne de cabra
+            <p class="descricao_lanche">Pequenos pães de hambúrguer macios e suculentos, recheados com mini hambúrgueres de carne de cabra
                 temperados com alho, pimenta e ervas frescas. Sirva com queijo cheddar derretido, bacon crocante, cebola
                 caramelizada e maionese caseira.</p>
             <p class="valor_lanche">R$: 35,00</p>
@@ -83,7 +82,7 @@
         <div class="lanches_item">
             <img src="recursos/imagens/lanches/HAMBURGUER_VEGANO4.jpg" alt="">
             <p class="nome_lanche">Wrap Cremoso de Cabra</p>
-            <p>Um wrap macio e saboroso feito com massa integral, envolvendo carne de cabra desfiada e cozida lentamente
+            <p class="descricao_lanche">Um wrap macio e saboroso feito com massa integral, envolvendo carne de cabra desfiada e cozida lentamente
                 em um molho cremoso de iogurte e especiarias indianas. Adicione legumes frescos picados, chutney de
                 manga e hortelã para um toque refrescante e aromático.</p>
             <p class="valor_lanche">R$:75,00</p>
@@ -98,10 +97,10 @@
             <p class="valor_lanche">R$: 55,00</p>
             <a  onclick="comprar(1, 55.00)" href="#">Comprar</a>
         </div>
-     <!--   <div class="lanches_item">
+     <div class="lanches_item">
             <img src="recursos/imagens/lanches/RELALISTIC_PHOTO_HAMBUGER3.jpg" alt="">
             <p class="nome_lanche">Mini Hambúrgueres de Cabra:</p>
-            <p>Pequenos pães de hambúrguer macios e suculentos, recheados com mini hambúrgueres de carne de cabra
+            <p class="descricao_lanche">Pequenos pães de hambúrguer macios e suculentos, recheados com mini hambúrgueres de carne de cabra
                 temperados com alho, pimenta e ervas frescas. Sirva com queijo cheddar derretido, bacon crocante, cebola
                 caramelizada e maionese caseira.</p>
             <p class="valor_lanche">R$: 35,00</p>
