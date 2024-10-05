@@ -12,7 +12,7 @@ nav{
     margin-top: -100px;
     position: fixed;
     background-color: white;
-    height: 100px;
+    height: 70px;
 
 }
 
@@ -22,12 +22,14 @@ nav ul{
     flex-wrap: wrap;
     justify-content: flex-end;
     margin: 35px 15px 0;
+    height: 35px;
     width: 100%; 
 }
 
 nav ul li{
+    
     margin: 5px;
-   list-style-type: none;
+    list-style-type: none;
 }
 
 nav ul li a{
@@ -38,8 +40,9 @@ nav ul li a{
 }
 
 nav img{
-    width: 80px;
-    margin-left: 35px;
+    width: 60px;
+    margin-left: 24px;
+    mix-blend-mode: multiply;
 }
 
 nav span{
@@ -71,11 +74,15 @@ nav span{
     display: flex; 
     margin-top: 100px; 
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 #secao section{
     width: 350px;
     margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
 
@@ -86,20 +93,24 @@ nav span{
 
 #secao:nth-child(1) img{
     width: 350px;
+    mix-blend-mode: multiply;
 }
 
 #secao:nth-child(2) img{
     width: 350px;
+    mix-blend-mode: multiply;
 }
 
-#secao section button{
-    width: 300px;
+#secao section a{
+    text-decoration: none;
     padding: 15px;
     margin: 10px 27px;
     border-radius: 20px;
+    background-color: #dc920d;
     border: none;
     font-size: 2em;
-    color: aliceblue;
+    color: black;
+    text-align: center;
 }
 /*-----carrossel------*/
 .container_par{

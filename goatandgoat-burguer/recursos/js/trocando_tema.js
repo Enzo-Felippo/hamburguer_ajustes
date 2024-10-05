@@ -9,7 +9,7 @@ function pegarTema(){
     const tema = localStorage.getItem("tema_escuro")
 
     if(tema){
-        toggleTrocandoTema()
+        toggleTrocandoTemas()
     }
     
 
@@ -17,7 +17,7 @@ function pegarTema(){
 //pegarTema()
 
 trocandoTemaBtn.addEventListener("change",function(){
-    toggleTrocandoTema()
+    toggleTrocandoTemas()
 
     localStorage.removeItem("tema_escuro")
 
